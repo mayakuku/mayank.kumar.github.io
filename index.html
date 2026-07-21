@@ -18,6 +18,10 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    html, body {
+      height: 100%;
+    }
+
     body {
       background-color: #e8e7e3;
       color: var(--text-main);
@@ -67,18 +71,18 @@
     .sidebar {
       width: 35%;
       background-color: var(--sidebar-bg);
-      padding: 2.5rem 1.6rem;
+      padding: 2.2rem 1.5rem;
       border-right: 1px solid var(--border-line);
     }
 
     .avatar-container {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 1.8rem;
     }
 
     .avatar-img {
-      width: 135px;
-      height: 135px;
+      width: 125px;
+      height: 125px;
       border-radius: 50%;
       object-fit: cover;
       object-position: top center;
@@ -88,15 +92,15 @@
     }
 
     .contact-list {
-      margin-bottom: 2rem;
-      font-size: 0.85rem;
+      margin-bottom: 1.8rem;
+      font-size: 0.82rem;
     }
 
     .contact-item {
       display: flex;
       align-items: center;
       gap: 0.6rem;
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.7rem;
       color: var(--text-main);
       word-break: break-word;
     }
@@ -114,38 +118,38 @@
 
     .contact-icon {
       color: var(--accent-gold);
-      font-size: 0.9rem;
+      font-size: 0.88rem;
     }
 
     .sidebar-heading {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: var(--accent-gold);
       border-bottom: 1.5px solid var(--border-line);
-      padding-bottom: 0.35rem;
-      margin-bottom: 1.1rem;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
     }
 
     .edu-item, .cert-item-side {
-      margin-bottom: 1.1rem;
+      margin-bottom: 1rem;
     }
 
     .edu-title {
       font-weight: 700;
-      font-size: 0.86rem;
+      font-size: 0.84rem;
       color: var(--accent-dark);
     }
 
     .edu-sub {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--text-muted);
       margin-top: 0.1rem;
     }
 
     .edu-date {
-      font-size: 0.75rem;
+      font-size: 0.73rem;
       color: #888888;
       margin-top: 0.1rem;
     }
@@ -156,10 +160,10 @@
     }
 
     .skill-category-list li {
-      margin-bottom: 0.85rem;
-      font-size: 0.82rem;
+      margin-bottom: 0.8rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
-      line-height: 1.45;
+      line-height: 1.4;
       position: relative;
       padding-left: 0.9rem;
     }
@@ -182,16 +186,16 @@
     /* RIGHT MAIN CONTENT */
     .main-content {
       width: 65%;
-      padding: 3rem 2.4rem;
+      padding: 2.8rem 2.2rem;
     }
 
     .header-main {
-      margin-bottom: 2rem;
+      margin-bottom: 1.8rem;
     }
 
     .name {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       font-weight: 600;
       letter-spacing: 1px;
       color: var(--accent-dark);
@@ -202,7 +206,7 @@
     }
 
     .title {
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       letter-spacing: 2px;
       text-transform: uppercase;
       font-weight: 600;
@@ -211,46 +215,46 @@
     }
 
     .main-heading {
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: var(--accent-gold);
       border-bottom: 1.5px solid var(--border-line);
-      padding-bottom: 0.35rem;
-      margin-bottom: 1.1rem;
-      margin-top: 2rem;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      margin-top: 1.8rem;
     }
 
     .summary-text {
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       color: var(--text-muted);
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
     .exp-item {
-      margin-bottom: 2rem;
+      margin-bottom: 1.8rem;
     }
 
     .exp-date {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
       color: var(--accent-gold);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.15rem;
     }
 
     .exp-role {
       font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       font-weight: 600;
       color: var(--accent-dark);
     }
 
     .exp-company {
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 600;
       color: var(--text-main);
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.7rem;
     }
 
     .exp-bullets {
@@ -260,10 +264,10 @@
     .exp-bullets li {
       position: relative;
       padding-left: 1.1rem;
-      margin-bottom: 0.6rem;
-      font-size: 0.86rem;
+      margin-bottom: 0.55rem;
+      font-size: 0.84rem;
       color: var(--text-muted);
-      line-height: 1.55;
+      line-height: 1.5;
     }
 
     .exp-bullets li::before {
@@ -275,15 +279,14 @@
       top: -0.1rem;
     }
 
-    /* 📌 PERFECT A4 PRINT CSS FILLING ENTIRE PAGE */
+    /* 📌 FIXED FULL HEIGHT SIDEBAR FOR A4 PRINT */
     @media print {
       @page {
         size: A4;
         margin: 0mm;
       }
       html, body {
-        height: 297mm;
-        width: 210mm;
+        height: 100% !important;
         background-color: #ffffff !important;
         padding: 0 !important;
         margin: 0 !important;
@@ -295,26 +298,29 @@
       .resume-wrapper {
         width: 100% !important;
         max-width: 100% !important;
-        height: 297mm !important;
+        min-height: 297mm !important;
         box-shadow: none !important;
         border-radius: 0 !important;
         display: flex !important;
         flex-direction: row !important;
+        align-items: stretch !important;
       }
 
       .sidebar {
         width: 34% !important;
-        height: 297mm !important;
+        min-height: 297mm !important;
         background-color: #f4f3f0 !important;
         padding: 2.2rem 1.4rem !important;
         border-right: 1px solid var(--border-line) !important;
+        box-sizing: border-box !important;
       }
 
       .main-content {
         width: 66% !important;
-        height: 297mm !important;
+        min-height: 297mm !important;
         background-color: #ffffff !important;
         padding: 2.5rem 2rem !important;
+        box-sizing: border-box !important;
       }
 
       .contact-item a {
@@ -357,7 +363,7 @@
   <!-- LEFT SIDEBAR -->
   <div class="sidebar">
     <div class="avatar-container">
-      <img src="profile.png" alt="Mayank Kumar" class="avatar-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/135/d1ccbf/666666?text=PHOTO';">
+      <img src="profile.png" alt="Mayank Kumar" class="avatar-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/125/d1ccbf/666666?text=PHOTO';">
     </div>
 
     <div class="contact-list">
