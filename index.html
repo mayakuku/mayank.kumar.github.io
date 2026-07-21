@@ -101,15 +101,16 @@
       word-break: break-word;
     }
 
+    /* Clickable Link Styling for HTML & PDF */
     .contact-item a {
-      color: var(--text-main);
-      text-decoration: none;
+      color: #0056b3;
+      text-decoration: underline;
+      font-weight: 500;
       transition: color 0.2s;
     }
 
     .contact-item a:hover {
       color: var(--accent-gold);
-      text-decoration: underline;
     }
 
     .contact-icon {
@@ -275,17 +276,18 @@
       top: -0.1rem;
     }
 
-    /* PERFECTLY PROPORTIONED 1-PAGE A4 PRINT CSS */
+    /* 📌 PERFECTLY PROPORTIONED 1-PAGE A4 PRINT CSS */
     @media print {
       @page {
         size: A4;
         margin: 0mm;
       }
-      body {
+      html, body {
+        height: 297mm;
+        width: 210mm;
         background-color: #ffffff !important;
         padding: 0 !important;
         margin: 0 !important;
-        zoom: 91%;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
       }
@@ -294,6 +296,7 @@
       .resume-wrapper {
         width: 100% !important;
         max-width: 100% !important;
+        min-height: 297mm !important;
         box-shadow: none !important;
         border-radius: 0 !important;
         display: flex !important;
@@ -302,31 +305,37 @@
 
       .sidebar {
         width: 34% !important;
+        min-height: 297mm !important;
         background-color: #f4f3f0 !important;
-        padding: 2.2rem 1.4rem !important;
+        padding: 2.5rem 1.5rem !important;
         border-right: 1px solid var(--border-line) !important;
       }
 
       .main-content {
         width: 66% !important;
+        min-height: 297mm !important;
         background-color: #ffffff !important;
-        padding: 2.5rem 2rem !important;
+        padding: 2.8rem 2.2rem !important;
       }
 
-      .name { font-size: 2.2rem !important; }
-      .title { font-size: 0.88rem !important; }
-      .main-heading { font-size: 0.88rem !important; margin-top: 1.6rem !important; margin-bottom: 0.8rem !important; }
-      .summary-text { font-size: 0.82rem !important; line-height: 1.5 !important; }
-      .exp-role { font-size: 1.18rem !important; }
-      .exp-company { font-size: 0.8rem !important; margin-bottom: 0.5rem !important; }
-      .exp-bullets li { font-size: 0.81rem !important; line-height: 1.45 !important; margin-bottom: 0.45rem !important; }
-      .avatar-img { width: 110px !important; height: 110px !important; }
-      .sidebar-heading { font-size: 0.85rem !important; margin-top: 1.4rem !important; margin-bottom: 0.8rem !important; }
-      .contact-item { font-size: 0.78rem !important; margin-bottom: 0.5rem !important; }
-      .contact-item a { text-decoration: none !important; color: var(--text-main) !important; }
-      .edu-title { font-size: 0.82rem !important; }
-      .edu-sub { font-size: 0.76rem !important; }
-      .skill-category-list li { font-size: 0.78rem !important; margin-bottom: 0.6rem !important; line-height: 1.35 !important; }
+      .contact-item a {
+        color: #0056b3 !important;
+        text-decoration: underline !important;
+      }
+
+      .name { font-size: 2.4rem !important; }
+      .title { font-size: 0.92rem !important; }
+      .main-heading { font-size: 0.92rem !important; margin-top: 1.8rem !important; margin-bottom: 1rem !important; }
+      .summary-text { font-size: 0.86rem !important; line-height: 1.6 !important; }
+      .exp-role { font-size: 1.25rem !important; }
+      .exp-company { font-size: 0.82rem !important; margin-bottom: 0.7rem !important; }
+      .exp-bullets li { font-size: 0.84rem !important; line-height: 1.5 !important; margin-bottom: 0.55rem !important; }
+      .avatar-img { width: 125px !important; height: 125px !important; }
+      .sidebar-heading { font-size: 0.88rem !important; margin-top: 1.8rem !important; margin-bottom: 1rem !important; }
+      .contact-item { font-size: 0.82rem !important; margin-bottom: 0.7rem !important; }
+      .edu-title { font-size: 0.84rem !important; }
+      .edu-sub { font-size: 0.78rem !important; }
+      .skill-category-list li { font-size: 0.8rem !important; margin-bottom: 0.8rem !important; line-height: 1.4 !important; }
     }
 
     /* Responsive Screen View */
