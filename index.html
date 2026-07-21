@@ -265,11 +265,38 @@
       top: -0.1rem;
     }
 
-    /* Print styling to hide top bar on PDF export */
+    /* PERFECT PRINT / PDF STYLING */
     @media print {
-      body { background-color: #ffffff; padding: 0; }
-      .top-bar { display: none; }
-      .resume-wrapper { box-shadow: none; max-width: 100%; }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      body {
+        background-color: #ffffff !important;
+        padding: 0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .top-bar { display: none !important; }
+      .resume-wrapper {
+        box-shadow: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+      }
+      .sidebar {
+        width: 35% !important;
+        background-color: #f4f3f0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        padding: 2rem 1.2rem !important;
+      }
+      .main-content {
+        width: 65% !important;
+        padding: 2.5rem 2rem !important;
+      }
     }
 
     /* Responsive */
