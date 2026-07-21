@@ -3,402 +3,364 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mayank Kumar | Senior Oracle DBA & Cloud Operations</title>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600;700&family=Red+Hat+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <title>Mayank Kumar - Senior Database Administrator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --rw-bg: #1c1b1a;                  /* Redwood Dark Canvas */
-      --rw-surface: #262524;             /* Surface Card */
-      --rw-surface-hover: #31302e;       /* Hover Surface */
-      --rw-border: #3d3b38;              /* Card Border */
-      --rw-red: #c74634;                 /* Oracle Redwood Red */
-      --rw-red-accent: #e0533c;          /* Bright Red Accent */
-      --rw-text: #f1efed;                /* Off-white Text */
-      --rw-text-dim: #a8a5a0;            /* Warm Slate Muted Text */
-      --rw-amber: #d97706;               /* Redwood Warm Accent */
+      --sidebar-bg: #f4f3f0;
+      --main-bg: #ffffff;
+      --text-main: #2b2b2b;
+      --text-muted: #666666;
+      --accent-gold: #a38863;
+      --accent-dark: #1a1a1a;
+      --border-line: #e2e0d9;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background-color: var(--rw-bg);
-      color: var(--rw-text);
-      font-family: 'Red Hat Text', sans-serif;
-      line-height: 1.6;
-      padding: 2.5rem 1rem;
+      background-color: #e8e7e3;
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.5;
+      padding: 2rem 1rem;
     }
 
-    .container { max-width: 960px; margin: 0 auto; }
-
-    /* Redwood Header Banner */
-    header {
-      background: var(--rw-surface);
-      border-left: 5px solid var(--rw-red);
-      border-top: 1px solid var(--rw-border);
-      border-right: 1px solid var(--rw-border);
-      border-bottom: 1px solid var(--rw-border);
-      border-radius: 4px;
-      padding: 2.5rem 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: var(--rw-text);
-      letter-spacing: -0.5px;
-      margin-bottom: 0.3rem;
-    }
-
-    p.subtitle {
-      font-size: 1.15rem;
-      color: var(--rw-red-accent);
-      font-weight: 500;
-      margin-bottom: 1.5rem;
-    }
-
-    .contact-bar {
+    .resume-wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--main-bg);
       display: flex;
-      gap: 0.8rem;
-      flex-wrap: wrap;
-    }
-
-    .badge-btn {
-      background: var(--rw-bg);
-      color: var(--rw-text-dim);
-      padding: 0.5rem 1rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
       border-radius: 4px;
-      text-decoration: none;
-      border: 1px solid var(--rw-border);
-      font-size: 0.88rem;
-      font-family: 'Red Hat Mono', monospace;
-      transition: all 0.2s ease-in-out;
+      overflow: hidden;
     }
 
-    .badge-btn:hover {
-      color: var(--rw-text);
-      border-color: var(--rw-red);
-      background: var(--rw-surface-hover);
+    /* LEFT SIDEBAR */
+    .sidebar {
+      width: 33%;
+      background-color: var(--sidebar-bg);
+      padding: 3rem 2rem;
+      border-right: 1px solid var(--border-line);
     }
 
-    /* Redwood Section Divider */
-    section { margin-bottom: 2.5rem; }
+    .avatar-container {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
 
-    .section-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--rw-text);
-      letter-spacing: 0.5px;
-      margin-bottom: 1.2rem;
+    .avatar-placeholder {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #d1ccbf;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 3px solid #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-list {
+      margin-bottom: 2.5rem;
+      font-size: 0.82rem;
+    }
+
+    .contact-item {
       display: flex;
       align-items: center;
       gap: 0.8rem;
+      margin-bottom: 0.8rem;
+      color: var(--text-main);
+      word-break: break-word;
+    }
+
+    .contact-icon {
+      color: var(--accent-gold);
+      font-size: 0.9rem;
+    }
+
+    .sidebar-heading {
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 1px;
       text-transform: uppercase;
-    }
-
-    .section-title::before {
-      content: '';
-      width: 12px;
-      height: 12px;
-      background-color: var(--rw-red);
-      border-radius: 2px;
-    }
-
-    .section-title::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--rw-border);
-    }
-
-    /* Cards */
-    .card {
-      background: var(--rw-surface);
-      border: 1px solid var(--rw-border);
-      border-radius: 4px;
-      padding: 1.5rem;
+      color: var(--accent-gold);
+      border-bottom: 1.5px solid var(--border-line);
+      padding-bottom: 0.4rem;
       margin-bottom: 1.2rem;
     }
 
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
+    .edu-item, .cert-item-side {
+      margin-bottom: 1.2rem;
     }
 
-    /* Skills Grid */
-    .skill-card h4 {
-      color: var(--rw-text);
-      font-size: 1rem;
-      margin-bottom: 0.8rem;
-      border-bottom: 1px solid var(--rw-border);
-      padding-bottom: 0.4rem;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .tag {
-      background: var(--rw-bg);
-      color: var(--rw-text-dim);
-      border: 1px solid var(--rw-border);
-      font-size: 0.82rem;
-      padding: 0.25rem 0.6rem;
-      border-radius: 3px;
-      font-family: 'Red Hat Mono', monospace;
-    }
-
-    .tag.highlight {
-      border-color: var(--rw-red);
-      color: var(--rw-text);
-    }
-
-    /* Experience Timeline */
-    .exp-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      margin-bottom: 0.8rem;
-      border-bottom: 1px solid var(--rw-border);
-      padding-bottom: 0.6rem;
-    }
-
-    .job-title {
-      font-size: 1.15rem;
+    .edu-title {
       font-weight: 700;
-      color: var(--rw-text);
+      font-size: 0.88rem;
+      color: var(--accent-dark);
     }
 
-    .company {
-      color: var(--rw-red-accent);
-      font-weight: 600;
-      font-size: 0.95rem;
+    .edu-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.1rem;
     }
 
-    .date-loc {
-      font-size: 0.85rem;
-      color: var(--rw-text-dim);
-      font-family: 'Red Hat Mono', monospace;
+    .edu-date {
+      font-size: 0.75rem;
+      color: #888888;
+      margin-top: 0.2rem;
     }
 
-    ul.bullet-list {
+    .skill-list {
       list-style: none;
-      padding-left: 0;
     }
 
-    ul.bullet-list li {
+    .skill-list li {
       position: relative;
-      padding-left: 1.4rem;
+      padding-left: 1rem;
       margin-bottom: 0.6rem;
-      color: var(--rw-text-dim);
-      font-size: 0.95rem;
+      font-size: 0.82rem;
+      color: var(--text-main);
     }
 
-    ul.bullet-list li::before {
-      content: '■';
+    .skill-list li::before {
+      content: '•';
       position: absolute;
       left: 0;
-      color: var(--rw-red);
-      font-size: 0.75rem;
-      top: 0.15rem;
-    }
-
-    /* Certifications Grid */
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 0.8rem;
-    }
-
-    .cert-item {
-      background: var(--rw-surface);
-      border: 1px solid var(--rw-border);
-      padding: 0.9rem 1.1rem;
-      border-radius: 4px;
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      color: var(--rw-text);
-      transition: border-color 0.2s;
-    }
-
-    .cert-item:hover {
-      border-color: var(--rw-red);
-    }
-
-    .cert-item::before {
-      content: 'OCI';
-      font-family: 'Red Hat Mono', monospace;
-      font-size: 0.7rem;
+      color: var(--accent-gold);
       font-weight: bold;
-      background: var(--rw-red);
-      color: #fff;
-      padding: 0.1rem 0.4rem;
-      border-radius: 2px;
     }
 
-    footer {
-      text-align: center;
-      color: var(--rw-text-dim);
+    /* RIGHT MAIN CONTENT */
+    .main-content {
+      width: 67%;
+      padding: 3.5rem 3rem;
+    }
+
+    .header-main {
+      margin-bottom: 2.5rem;
+    }
+
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--accent-dark);
+    }
+
+    .name span {
+      color: var(--accent-gold);
+    }
+
+    .title {
+      font-size: 0.95rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-top: 0.2rem;
+    }
+
+    .main-heading {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      border-bottom: 1.5px solid var(--border-line);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    .summary-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .exp-item {
+      margin-bottom: 2rem;
+    }
+
+    .exp-date {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent-gold);
+      margin-bottom: 0.2rem;
+    }
+
+    .exp-role {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+    }
+
+    .exp-company {
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 0.8rem;
+    }
+
+    .exp-bullets {
+      list-style: none;
+    }
+
+    .exp-bullets li {
+      position: relative;
+      padding-left: 1.2rem;
+      margin-bottom: 0.5rem;
       font-size: 0.85rem;
-      font-family: 'Red Hat Mono', monospace;
-      padding-top: 2rem;
-      border-top: 1px solid var(--rw-border);
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .exp-bullets li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent-gold);
+      font-size: 1.1rem;
+      top: -0.1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .resume-wrapper { flex-direction: column; }
+      .sidebar, .main-content { width: 100%; }
+      .sidebar { border-right: none; border-bottom: 1px solid var(--border-line); }
     }
   </style>
 </head>
 <body>
 
-<div class="container">
+<div class="resume-wrapper">
 
-  <!-- Header Section -->
-  <header>
-    <h1>Mayank Kumar</h1>
-    <p class="subtitle">Senior Oracle Database Administrator | Cloud Operations & Infrastructure Specialist</p>
-    <div class="contact-bar">
-      <a href="mailto:mayank.kumar1120@gmail.com" class="badge-btn">✉ mayank.kumar1120@gmail.com</a>
-      <a href="https://www.linkedin.com/in/mayankrahi/" target="_blank" class="badge-btn">💼 LinkedIn</a>
-      <a href="tel:+917561909698" class="badge-btn">📞 +91 7561909698</a>
-      <span class="badge-btn" style="cursor:default;">📍 Bengaluru, India</span>
+  <!-- LEFT SIDEBAR -->
+  <div class="sidebar">
+    <div class="avatar-container">
+      <div class="avatar-placeholder">PHOTO</div>
     </div>
-  </header>
 
-  <!-- Summary Section -->
-  <section>
-    <div class="section-title">Overview</div>
-    <div class="card">
-      <p>Results-driven <strong>Senior Oracle DBA</strong> with <strong>6+ years of hands-on experience</strong> administering, optimizing, and securing enterprise-grade Oracle databases across on-premises and Oracle Cloud Infrastructure (OCI) environments. Proven expertise in High Availability (HA) architectures, DataGuard DR automation, performance tuning, and zero-downtime database patching. Adept at proactively identifying system bottlenecks, automating routine maintenance via Unix Shell scripting, and ensuring high database availability.</p>
-    </div>
-  </section>
-
-  <!-- Core Technical Competencies -->
-  <section>
-    <div class="section-title">Technical Expertise</div>
-    <div class="grid-2">
-      <div class="card skill-card">
-        <h4>Oracle Core Architecture</h4>
-        <div class="tags">
-          <span class="tag highlight">Oracle 12c/13c/19c</span>
-          <span class="tag">CDB/PDB Architecture</span>
-          <span class="tag highlight">ASM</span>
-          <span class="tag">Clusterware</span>
-          <span class="tag">Tablespace Admin</span>
-        </div>
+    <div class="contact-list">
+      <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        <span>+91 7561909698</span>
       </div>
-
-      <div class="card skill-card">
-        <h4>HA & Disaster Recovery</h4>
-        <div class="tags">
-          <span class="tag highlight">Oracle DataGuard</span>
-          <span class="tag">Active DataGuard</span>
-          <span class="tag">Switchover / Failover</span>
-          <span class="tag">GoldenGate</span>
-          <span class="tag highlight">RMAN Recovery</span>
-        </div>
+      <div class="contact-item">
+        <span class="contact-icon">✉</span>
+        <span>mayank.kumar1120@gmail.com</span>
       </div>
-
-      <div class="card skill-card">
-        <h4>Cloud & Infrastructure</h4>
-        <div class="tags">
-          <span class="tag highlight">Oracle Cloud Infrastructure (OCI)</span>
-          <span class="tag">Cloud DB Systems</span>
-          <span class="tag">OCI Storage Mgmt</span>
-          <span class="tag highlight">OEM 13c</span>
-        </div>
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <span>Bengaluru, India</span>
       </div>
-
-      <div class="card skill-card">
-        <h4>Tuning, Scripting & Ops</h4>
-        <div class="tags">
-          <span class="tag">SQL & PL/SQL</span>
-          <span class="tag highlight">Unix Shell Scripting</span>
-          <span class="tag">RU Patching</span>
-          <span class="tag">ServiceNow (SNOW)</span>
-          <span class="tag">JIRA / Confluence</span>
-        </div>
+      <div class="contact-item">
+        <span class="contact-icon">💼</span>
+        <span>linkedin.com/in/mayankrahi</span>
       </div>
     </div>
-  </section>
 
-  <!-- Professional Experience -->
-  <section>
-    <div class="section-title">Experience</div>
+    <div class="sidebar-heading">Education</div>
+    <div class="edu-item">
+      <div class="edu-title">Bachelor of Engineering (B.E.)</div>
+      <div class="edu-sub">Electrical & Electronics Engg.</div>
+      <div class="edu-sub">Birla Institute of Technology, Mesra</div>
+      <div class="edu-date">2015 – 2019 | GPA: 7.7</div>
+    </div>
+
+    <div class="sidebar-heading" style="margin-top: 2rem;">Certifications</div>
+    <div class="cert-item-side">
+      <div class="edu-title">Oracle Database 19c: Admin I</div>
+      <div class="edu-date">Exam: 1Z0-11082</div>
+    </div>
+    <div class="cert-item-side">
+      <div class="edu-title">Professional Oracle DBA II</div>
+      <div class="edu-date">Exam: 1Z0-083</div>
+    </div>
+    <div class="cert-item-side">
+      <div class="edu-title">Oracle AI Vector Search Professional</div>
+      <div class="edu-date">23ai Professional</div>
+    </div>
+    <div class="cert-item-side">
+      <div class="edu-title">OCI 2025 AI Certified Associate</div>
+      <div class="edu-date">OCA Certified</div>
+    </div>
+    <div class="cert-item-side">
+      <div class="edu-title">Cloud Data Management Foundation</div>
+      <div class="edu-date">2025 Foundation OCA</div>
+    </div>
+
+    <div class="sidebar-heading" style="margin-top: 2rem;">Skills</div>
+    <ul class="skill-list">
+      <li>Oracle Database 12c/13c/19c</li>
+      <li>Oracle Cloud Infrastructure (OCI)</li>
+      <li>DataGuard & Active DataGuard</li>
+      <li>RMAN Backup & Recovery</li>
+      <li>ASM & Clusterware Architecture</li>
+      <li>SQL / PL-SQL & Unix Scripting</li>
+      <li>OEM 13c & ServiceNow (SNOW)</li>
+    </ul>
+  </div>
+
+  <!-- RIGHT MAIN CONTENT -->
+  <div class="main-content">
+    <div class="header-main">
+      <h1 class="name">MAYANK <span>KUMAR</span></h1>
+      <div class="title">Senior Database Administrator</div>
+    </div>
+
+    <div class="main-heading">Professional Summary</div>
+    <p class="summary-text">
+      Accomplished Senior Oracle Database Administrator with over 6 years of experience in managing, optimizing, and securing enterprise database systems across Cloud (OCI) and on-premises platforms. Proficient in ensuring high availability, DataGuard disaster recovery, performance tuning, zero-downtime RU patching, and operational automation via Unix scripting.
+    </p>
+
+    <div class="main-heading">Experience</div>
 
     <!-- Job 1 -->
-    <div class="card">
-      <div class="exp-header">
-        <div>
-          <div class="job-title">Senior Database Administrator, Cloud Operations</div>
-          <div class="company">Oracle Solution Services (India) Pvt. Ltd.</div>
-        </div>
-        <div class="date-loc">Jul 2022 – Present | Bengaluru, India</div>
-      </div>
-      <ul class="bullet-list">
-        <li><strong>OCI Infrastructure & Cloud Operations:</strong> Provisioned, managed, and maintained high-availability Oracle Database Cloud Services on OCI utilizing Automatic Storage Management (ASM).</li>
-        <li><strong>Data Protection & High Availability:</strong> Implemented robust backup and disaster recovery strategies using RMAN and Oracle DataGuard, executing regular DR drills to guarantee minimal recovery time (RTO).</li>
-        <li><strong>Database Maintenance & Patching:</strong> Executed Release Update (RU) patching, PSU application, and version upgrades across non-production and production environments with strict compliance to downtime windows.</li>
-        <li><strong>Proactive Monitoring & Incident Resolution:</strong> Leveraged OEM 13c and OCI alarm services to actively monitor CPU, I/O, tablespace utilization, and alert logs, preventing potential outages before impact.</li>
+    <div class="exp-item">
+      <div class="exp-date">July 2022 – Present</div>
+      <div class="exp-role">Senior Database Administrator, Cloud Operations</div>
+      <div class="exp-company">Oracle Solution Services (India) Pvt. Ltd. / Bengaluru, India</div>
+      <ul class="exp-bullets">
+        <li>Provisioned and managed high-availability Oracle databases on OCI utilizing Automatic Storage Management (ASM).</li>
+        <li>Implemented robust disaster recovery strategies using Oracle DataGuard and RMAN, performing regular DR testing to ensure minimal RTO.</li>
+        <li>Executed Release Update (RU) patching and system maintenance with strict adherence to high-availability SLAs.</li>
+        <li>Proactively monitored database health via OEM 13c, resolving performance bottlenecks before business impact.</li>
       </ul>
     </div>
 
     <!-- Job 2 -->
-    <div class="card">
-      <div class="exp-header">
-        <div>
-          <div class="job-title">Production Database Administrator</div>
-          <div class="company">Cognizant Technology Services</div>
-        </div>
-        <div class="date-loc">Dec 2019 – Jul 2022 | Chennai, India</div>
-      </div>
-      <ul class="bullet-list">
-        <li><strong>Database Administration & Refresh:</strong> Conducted routine production database restores, schema refreshes using Data Pump (expdp/impdp), and physical storage management across large-scale databases.</li>
-        <li><strong>Automation & Maintenance:</strong> Developed custom Unix shell scripts integrated with Tidal Enterprise Scheduler to automate health checks, log cleanup, backup verification, and automated reporting.</li>
-        <li><strong>Security & Compliance:</strong> Managed role-based user access control, database auditing, password policies, and security patching to adhere to enterprise compliance standards.</li>
-        <li><strong>Incident Management:</strong> Handled P1/P2 production incidents using ServiceNow (SNOW), troubleshooting performance bottlenecks, lock waits, and system deadlocks under SLA constraints.</li>
+    <div class="exp-item">
+      <div class="exp-date">December 2019 – July 2022</div>
+      <div class="exp-role">Production Database Administrator</div>
+      <div class="exp-company">Cognizant Technology Services / Chennai, India</div>
+      <ul class="exp-bullets">
+        <li>Managed database lifecycle including installation, schema refreshes (expdp/impdp), and storage tracking.</li>
+        <li>Automated routine health checks and log cleanups using Unix Shell Scripting and Tidal Enterprise Scheduler.</li>
+        <li>Handled security compliance, user auditing, and P1/P2 production incident resolution via ServiceNow.</li>
       </ul>
     </div>
-  </section>
 
-  <!-- Certifications -->
-  <section>
-    <div class="section-title">Certifications</div>
-    <div class="cert-grid">
-      <div class="cert-item">Oracle Database 19c: Administration I (1Z0-11082)</div>
-      <div class="cert-item">Professional Oracle Database Administration II (1Z0-083)</div>
-      <div class="cert-item">Oracle AI Vector Search Professional 23ai</div>
-      <div class="cert-item">OCI 2025 AI Certified Associate (OCA)</div>
-      <div class="cert-item">Cloud Data Management 2025 Foundation Associate</div>
-      <div class="cert-item">OCI 2025 AI Foundation Certified Associate</div>
-    </div>
-  </section>
-
-  <!-- Education & Academic Project -->
-  <section>
-    <div class="section-title">Education</div>
-    <div class="card">
-      <div class="exp-header">
-        <div>
-          <div class="job-title">Bachelor of Engineering (B.E.) - Electrical & Electronics Engg.</div>
-          <div class="company">Birla Institute of Technology, Mesra</div>
-        </div>
-        <div class="date-loc">Jul 2015 – Jul 2019 | GPA: 7.7 / 10</div>
-      </div>
-      <p style="color: var(--rw-text-dim); font-size: 0.93rem;">
-        <strong>Academic Project:</strong> <em>Modelling and Controlling of Electric Spring</em> — Designed PID control simulations in MATLAB/Simulink to stabilize grid voltage fluctuations.
+    <div class="main-heading">Academic Project</div>
+    <div class="exp-item" style="margin-bottom: 0;">
+      <div class="exp-role" style="font-size: 1.1rem;">Modelling and Controlling of Electric Spring</div>
+      <div class="exp-company">BIT Mesra | MATLAB & Simulink</div>
+      <p class="summary-text">
+        Developed simulations using PID control theory (PI controller) to stabilize grid voltage fluctuations and reduce power grid instability.
       </p>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© Mayank Kumar • Designed with Oracle Redwood UI System Guidelines</p>
-  </footer>
+  </div>
 
 </div>
 
