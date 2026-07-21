@@ -264,16 +264,14 @@
       top: -0.1rem;
     }
 
-    /* 📌 FIXED PRINT CSS - NO WRAPPING / NO MISALIGNMENT */
+    /* PERFECT PRINT / PDF LAYOUT FIX */
     @media print {
       @page {
         size: A4;
-        margin: 0mm;
+        margin: 0;
       }
-      html, body {
-        width: 210mm;
-        height: 100%;
-        background: #ffffff !important;
+      body {
+        background-color: #ffffff !important;
         padding: 0 !important;
         margin: 0 !important;
         -webkit-print-color-adjust: exact !important;
@@ -405,7 +403,7 @@
 
     <div class="main-heading">Professional Summary</div>
     <p class="summary-text">
-      Accomplished Senior Oracle Database Administrator with over 6 years of experience managing, optimizing, and securing enterprise database systems across Cloud (OCI) and on-premises platforms[cite: 1]. Proficient in high availability, DataGuard disaster recovery, performance tuning (AWR/ASH), zero-downtime RU patching, Oracle APEX platform management, and operational automation via Unix scripting[cite: 1].
+      Accomplished Senior Oracle Database Administrator with over 6 years of experience managing, optimizing, and securing enterprise database systems across Cloud (OCI) and on-premises platforms. Proficient in high availability, DataGuard disaster recovery, performance tuning (AWR/ASH), zero-downtime RU patching, Oracle APEX platform management, and operational automation via Unix scripting.
     </p>
 
     <div class="main-heading">Experience</div>
@@ -414,14 +412,14 @@
     <div class="exp-item">
       <div class="exp-date">July 2022 – Present</div>
       <div class="exp-role">Senior Database Administrator, Cloud Operations</div>
-      <div class="exp-company">Oracle Solution Services (India) Pvt. Ltd. / Bengaluru, India[cite: 1]</div>
+      <div class="exp-company">Oracle Solution Services (India) Pvt. Ltd. / Bengaluru, India</div>
       <ul class="exp-bullets">
-        <li>Provisioned, managed, and optimized high-availability Oracle databases on OCI utilizing Automatic Storage Management (ASM) and Oracle RAC[cite: 1].</li>
-        <li>Architected and configured Oracle APEX workspace management, schema bindings, RESTful Web Services, and web entry integrations for internal tools[cite: 1].</li>
-        <li>Implemented robust disaster recovery strategies using Active DataGuard and RMAN, executing periodic DR drills to ensure minimal RTO & RPO[cite: 1].</li>
-        <li>Executed Release Update (RU) patching, database version upgrades (12c to 19c), and structural validations with strict compliance to downtime windows[cite: 1].</li>
-        <li>Proactively monitored enterprise databases via OEM 13c Cloud Control, resolving severe system bottlenecks using AWR, ASH, and execution plan tuning[cite: 1].</li>
-        <li>Collaborated with global cloud infrastructure teams to manage incident escalations, capacity planning, and automated maintenance workflows[cite: 1].</li>
+        <li>Provisioned, managed, and optimized high-availability Oracle databases on OCI utilizing Automatic Storage Management (ASM) and Oracle RAC.</li>
+        <li>Architected and configured Oracle APEX workspace management, schema bindings, RESTful Web Services, and web entry integrations for internal tools.</li>
+        <li>Implemented robust disaster recovery strategies using Active DataGuard and RMAN, executing periodic DR drills to ensure minimal RTO & RPO.</li>
+        <li>Executed Release Update (RU) patching, database version upgrades (12c to 19c), and structural validations with strict compliance to downtime windows.</li>
+        <li>Proactively monitored enterprise databases via OEM 13c Cloud Control, resolving severe system bottlenecks using AWR, ASH, and execution plan tuning.</li>
+        <li>Collaborated with global cloud infrastructure teams to manage incident escalations, capacity planning, and automated maintenance workflows.</li>
       </ul>
     </div>
 
@@ -429,22 +427,22 @@
     <div class="exp-item">
       <div class="exp-date">December 2019 – July 2022</div>
       <div class="exp-role">Production Database Administrator</div>
-      <div class="exp-company">Cognizant Technology Services / Chennai, India[cite: 1]</div>
+      <div class="exp-company">Cognizant Technology Services / Chennai, India</div>
       <ul class="exp-bullets">
-        <li>Managed complete database lifecycle across production and non-production environments, including installation, configuration, and storage tracking[cite: 1].</li>
-        <li>Executed schema refreshes, data migration, and table refreshes using Oracle Data Pump (expdp/impdp) and Transportable Tablespaces[cite: 1].</li>
-        <li>Developed custom Unix Shell scripts integrated with Tidal Enterprise Scheduler to automate daily database health checks, log rotation, and backup verifications[cite: 1].</li>
-        <li>Ensured strict security compliance by implementing Transparent Data Encryption (TDE), database auditing, and fine-grained user privilege access controls[cite: 1].</li>
-        <li>Handled 24x7 SLA-bound P1/P2 production incidents, managing deadlock resolutions, lock wait analysis, and tablespace extensions via ServiceNow (SNOW)[cite: 1].</li>
+        <li>Managed complete database lifecycle across production and non-production environments, including installation, configuration, and storage tracking.</li>
+        <li>Executed schema refreshes, data migration, and table refreshes using Oracle Data Pump (expdp/impdp) and Transportable Tablespaces.</li>
+        <li>Developed custom Unix Shell scripts integrated with Tidal Enterprise Scheduler to automate daily database health checks, log rotation, and backup verifications.</li>
+        <li>Ensured strict security compliance by implementing Transparent Data Encryption (TDE), database auditing, and fine-grained user privilege access controls.</li>
+        <li>Handled 24x7 SLA-bound P1/P2 production incidents, managing deadlock resolutions, lock wait analysis, and tablespace extensions via ServiceNow (SNOW).</li>
       </ul>
     </div>
 
     <div class="main-heading">Academic Project</div>
     <div class="exp-item" style="margin-bottom: 0;">
       <div class="exp-role" style="font-size: 1.05rem;">Modelling and Controlling of Electric Spring</div>
-      <div class="exp-company">BIT Mesra | MATLAB & Simulink[cite: 1]</div>
+      <div class="exp-company">BIT Mesra | MATLAB & Simulink</div>
       <p class="summary-text">
-        Developed simulations using PID control theory (PI controller) to stabilize grid voltage fluctuations and reduce power grid instability[cite: 1].
+        Developed simulations using PID control theory (PI controller) to stabilize grid voltage fluctuations and reduce power grid instability.
       </p>
     </div>
 
