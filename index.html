@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank Kumar | Senior Database Administrator</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-dim: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 900px; margin: 0 auto; }
+    
+    header { text-align: center; padding: 2rem 0; border-bottom: 1px solid #334155; }
+    h1 { font-size: 2.5rem; color: var(--accent); margin-bottom: 0.5rem; }
+    p.subtitle { font-size: 1.2rem; color: var(--text-dim); margin-bottom: 1rem; }
+    .contact-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+    .btn { background: var(--card-bg); color: var(--accent); padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none; border: 1px solid #334155; font-size: 0.9rem; transition: 0.3s; }
+    .btn:hover { background: var(--accent); color: var(--bg); }
+
+    section { margin: 2.5rem 0; }
+    h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 1rem; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 4px; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .card { background: var(--card-bg); padding: 1.2rem; border-radius: 8px; border: 1px solid #334155; }
+    .card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: #fff; }
+    .card p { font-size: 0.95rem; color: var(--text-dim); }
+
+    .timeline-item { background: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid var(--accent); }
+    .timeline-title { font-weight: bold; font-size: 1.1rem; }
+    .timeline-meta { font-size: 0.85rem; color: var(--text-dim); margin-bottom: 0.8rem; }
+    ul { margin-left: 1.2rem; color: var(--text-dim); }
+    li { margin-bottom: 0.4rem; }
+
+    footer { text-align: center; padding: 2rem 0; font-size: 0.85rem; color: var(--text-dim); border-top: 1px solid #334155; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Mayank Kumar</h1>
+    <p classsubtitle">Senior Database Administrator | Cloud Operations</p>
+    <div class="contact-links">
+      <a href="mailto:mayank.kumar1120@gmail.com" class="btn">📧 Email</a>
+      <a href="https://www.linkedin.com/in/mayankrahi/" target="_blank" class="btn">💼 LinkedIn</a>
+      <a href="tel:+917561909698" class="btn">📞 +91 7561909698</a>
+      <span class="btn" style="cursor:default;">📍 Bengaluru, India</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Oracle DBA with 6+ years of experience in optimizing database performance, managing high-availability Oracle databases, OCI, and ensuring end-to-end data integrity[cite: 1]. Expertise in proactive monitoring, disaster recovery, tablespace management, and cloud infrastructure[cite: 1].</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Expertise</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Databases & Cloud</h3>
+        <p>Oracle 12c/13c/19c, OCI, DataGuard, GoldenGate, ASM, Clusterware[cite: 1]</p>
+      </div>
+      <div class="card">
+        <h3>Backup & Recovery</h3>
+        <p>RMAN Mastery, Disaster Recovery Planning & Testing[cite: 1]</p>
+      </div>
+      <div class="card">
+        <h3>Scripting & SQL</h3>
+        <p>SQL, PL/SQL, Unix Shell Scripting[cite: 1]</p>
+      </div>
+      <div class="card">
+        <h3>Tools & Operations</h3>
+        <p>OEM 13C, ServiceNow (SNOW), JIRA, Confluence, Tidal Scheduler[cite: 1]</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    
+    <div class="timeline-item">
+      <div class="timeline-title">Senior Database Administrator, Cloud Operations</div>
+      <div class="timeline-meta">Oracle Solution Services (India) Pvt. Ltd. | Bengaluru, India | Jul 2022 – Present[cite: 1]</div>
+      <ul>
+        <li>Managed and optimized high-availability Oracle databases on OCI, leveraging ASM for dynamic storage management[cite: 1].</li>
+        <li>Handled proactive backup strategies, restores, recovery, patching, and tablespace management[cite: 1].</li>
+        <li>Monitored system health to proactively identify and resolve database alerts and performance bottlenecks[cite: 1].</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-title">Production Database Administrator</div>
+      <div class="timeline-meta">Cognizant Technology Services | Chennai, India | Dec 2019 – Jul 2022[cite: 1]</div>
+      <ul>
+        <li>Managed infrastructure setup, fresh installations, storage tracking, and health monitoring[cite: 1].</li>
+        <li>Executed RMAN backup/recovery, DataGuard DR testing, user management, and compliance auditing[cite: 1].</li>
+        <li>Automated maintenance operations using Unix Scripting & Tidal Scheduler; managed production job deployments and refreshes[cite: 1].</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li>Professional Oracle Database Administration II (1Z0-083)[cite: 1]</li>
+        <li>Oracle AI Vector Search Professional 23ai[cite: 1]</li>
+        <li>OCI 2025 AI OCA[cite: 1]</li>
+        <li>Cloud Data Management 2025 Foundation OCA[cite: 1]</li>
+        <li>OCI 2025 AI Foundation OCA[cite: 1]</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education & Project</h2>
+    <div class="card">
+      <h3>B.E. in Electrical and Electronics Engineering (GPA: 7.7)[cite: 1]</h3>
+      <p style="margin-bottom:0.8rem;">Birla Institute of Technology, Mesra | Jul 2015 – Jul 2019[cite: 1]</p>
+      <p><strong>Academic Project:</strong> <em>Modelling and Controlling of Electric Spring</em> — Designed PID control simulations in MATLAB/Simulink to stabilize voltage fluctuations[cite: 1].</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Mayank Kumar • Hosted on GitHub Pages</p>
+  </footer>
+</div>
+
+</body>
+</html>
