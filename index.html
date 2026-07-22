@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1000, initial-scale=0.4, maximum-scale=1.0">
   <title>Mayank Kumar - Senior Database Administrator</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -23,11 +23,12 @@
       color: var(--text-main);
       font-family: 'Plus Jakarta Sans', sans-serif;
       line-height: 1.4;
-      padding: 1.5rem 1rem;
+      padding: 1.5rem 0.5rem;
+      min-width: 900px;
     }
 
     .top-bar {
-      max-width: 900px;
+      width: 900px;
       margin: 0 auto 1rem auto;
       display: flex;
       justify-content: flex-end;
@@ -50,10 +51,11 @@
     .download-btn:hover { background-color: var(--accent-gold); }
 
     .resume-wrapper {
-      max-width: 900px;
+      width: 900px;
       margin: 0 auto;
       background: var(--main-bg);
       display: flex;
+      flex-direction: row;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
       border-radius: 4px;
       overflow: hidden;
@@ -65,6 +67,7 @@
       background-color: var(--sidebar-bg);
       padding: 1.6rem 1.1rem;
       border-right: 1px solid var(--border-line);
+      flex-shrink: 0;
     }
 
     .avatar-container { text-align: center; margin-bottom: 1rem; }
@@ -144,6 +147,7 @@
     .main-content {
       width: 66%;
       padding: 1.6rem 1.6rem;
+      flex-grow: 1;
     }
 
     .header-main { margin-bottom: 1rem; }
@@ -214,7 +218,7 @@
       top: -0.1rem;
     }
 
-    /* 📌 PERFECT 1-PAGE FIT PRINT CSS */
+    /* PRINT STYLING */
     @media print {
       @page {
         size: A4 portrait;
@@ -227,6 +231,7 @@
         background-color: #ffffff !important;
         padding: 0 !important;
         margin: 0 !important;
+        min-width: unset !important;
         overflow: hidden !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
@@ -261,12 +266,6 @@
       }
 
       .contact-item a { color: #0056b3 !important; text-decoration: underline !important; }
-    }
-
-    @media (max-width: 768px) {
-      .resume-wrapper { flex-direction: column; }
-      .sidebar, .main-content { width: 100%; }
-      .sidebar { border-right: none; border-bottom: 1px solid var(--border-line); }
     }
   </style>
 </head>
